@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartWalker — Imaan Rafiq</title>
+<meta name="description" content="An intelligent rollator that monitors posture, detects obstacles, analyses gait and calls for help if the user falls — designed to be affordable as well as clever.">
+<meta name="theme-color" content="#0c0c0d">
+<meta property="og:title" content="SmartWalker — Imaan Rafiq">
+<meta property="og:description" content="An intelligent rollator that monitors posture, detects obstacles, analyses gait and calls for help if the user falls — designed to be affordable as well as clever.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../assets/img/smartwalker/00.jpg">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/Inter-normal-300_800-latin.woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+
+</head>
+<body><div class="progress" aria-hidden="true"></div>
+<header class="nav">
+  <a class="nav__logo" href="../../index.html">Imaan Rafiq<span>&trade;</span></a>
+  <nav class="nav__links" id="menu" data-open="false" aria-label="Primary"><a class="nav__link" href="../../index.html">Work</a><a class="nav__link" href="../../work/index.html" aria-current="page">Archive</a><a class="nav__link" href="../../about/index.html">Studio</a><a class="nav__link" href="../../contact/index.html">Contact</a></nav>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button">Menu</button>
+</header>
+<main>
+  <article>
+    <header class="case-hero">
+      <div class="wrap">
+        <a class="eyebrow" href="../index.html" style="display:inline-block">&larr; Work archive</a>
+        <h1 class="display mt-2" data-reveal style="--d:60ms">SmartWalker</h1>
+        <p class="lede mt-2" data-reveal style="--d:140ms">Enhancing independent mobility</p>
+        <dl class="case-hero__meta">
+      <div><dt>Discipline</dt><dd>Final year project</dd></div>
+      <div><dt>Year</dt><dd>2025</dd></div>
+      <div><dt>Role</dt><dd>User research · CAD · Electronics · FEA · BOM costing</dd></div>
+      <div><dt>Tools</dt><dd>SOLIDWORKS · ESP32-S3 · Arduino / C++ · KeyShot</dd></div>
+      <div><dt>Recognition</dt><dd>James Dyson Award 2026 entry</dd></div>
+    </dl>
+        <figure class="case-cover" data-reveal style="--d:220ms">
+          <img src="../../assets/img/smartwalker/00.jpg" alt="SmartWalker — cover" fetchpriority="high" decoding="async">
+        </figure>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap case-body">
+        <aside class="case-aside">
+          <p class="case-aside__h">At a glance</p>
+          <ul>
+            <li>Final year project</li>
+            <li>2025</li>
+            <li>User research · CAD · Electronics · FEA · BOM costing</li>
+          </ul>
+          <div class="mt-3">
+            <p class="case-aside__h">Disciplines</p>
+            <div class="tag-row"><li>product</li><li>engineering</li><li>hardware</li></div>
+          </div>
+        </aside>
+        <div class="stack" style="--s:clamp(2.5rem,5vw,4.5rem)">
+          <div class="prose stack" style="--s:1.15rem">
+            <p>Conventional mobility aids are often visually clinical, uncomfortable and technologically outdated, which contributes to reduced confidence, social stigma and limited independence for elderly users. The SmartWalker started as a simple question: what if a mobility aid actually worked for the person using it? Not just something to lean on, but something intelligent.</p><p>I built the working prototype from scratch — user research, mechanical CAD, electronics, sensor fusion, FEA validation, a commercial BOM and a 12-section technical report. It has since been submitted to the 2026 James Dyson Award.</p>
+          </div>
+          <div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">The problem</h2><div class="prose"><p>Conventional mobility aids are visually clinical, uncomfortable and technologically outdated — contributing to reduced confidence, social stigma and limited independence for elderly users.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">The solution</h2><div class="prose"><p>A reimagined walker that combines ergonomic form with integrated smart technology: posture monitoring, obstacle detection, AI-assisted gait analysis, and emergency alerting — all in a lightweight, elegant package.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Engineering the intelligence</h2><div class="prose"><p>The firmware graduated from a basic benchtop test on an Arduino Uno to a production-ready ESP32-S3. The 8-bit Uno proved the core logic, but crunching sensor fusion across multiple I2C devices pushed it to its limit.</p><p>Moving to the 32-bit dual-core chip changed the game. High-frequency IMU polling could be offloaded to one core while emergency braking and buzzer logic stayed entirely on the other, with real multithreading and far more headroom for advanced filtering.</p><ul class="stack" style="--s:0.6rem"><li style="display:flex;gap:0.75rem;color:var(--bone-dim)"><span style="color:var(--accent);flex:none">&mdash;</span><span>LiDAR and ultrasonic obstacle detection</span></li><li style="display:flex;gap:0.75rem;color:var(--bone-dim)"><span style="color:var(--accent);flex:none">&mdash;</span><span>IMU-based posture and fall monitoring</span></li><li style="display:flex;gap:0.75rem;color:var(--bone-dim)"><span style="color:var(--accent);flex:none">&mdash;</span><span>AI-assisted gait analysis</span></li><li style="display:flex;gap:0.75rem;color:var(--bone-dim)"><span style="color:var(--accent);flex:none">&mdash;</span><span>Bluetooth / 4G emergency alerting with SMS</span></li><li style="display:flex;gap:0.75rem;color:var(--bone-dim)"><span style="color:var(--accent);flex:none">&mdash;</span><span>Haptic and audio feedback</span></li><li style="display:flex;gap:0.75rem;color:var(--bone-dim)"><span style="color:var(--accent);flex:none">&mdash;</span><span>Hybrid regenerative wheels assist braking and walking over uneven ground</span></li></ul></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Designed for more than one income</h2><div class="prose"><p>One thing I felt strongly about from the start: this should not be a product only wealthy people can access. Mobility issues do not discriminate by income, so the design split into two concepts.</p><p>The premium tier includes hybrid regenerative wheels that assist braking and walking over uneven ground. The affordable tier strips back to the core safety technology — fall detection, obstacle awareness, emergency alerts — so the people who need it most can actually get it.</p><p>I believe it is ethically wrong to design assistive technology for one sector of society and ignore everyone else.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Outcome</h2><div class="prose"><p>The walker supports users up to 130 kg, maintains a total weight below 6.5 kg, and allows continuous operation for 8 hours per battery cycle. Electronics and sensor modules were packaged carefully to provide real-time posture monitoring without significantly increasing weight.</p></div></div>
+          <div class="stats mt-4"><div class="stat" data-reveal><span class="stat__k">130 kg</span><span class="stat__v">Maximum user weight</span></div><div class="stat" data-reveal><span class="stat__k">6.5 kg</span><span class="stat__v">Total system weight</span></div><div class="stat" data-reveal><span class="stat__k">8 hrs</span><span class="stat__v">Operation per battery cycle</span></div><div class="stat" data-reveal><span class="stat__k">£252.99</span><span class="stat__v">Target BOM cost</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="eyebrow" data-reveal>Image plate</p>
+            <h2 class="display mt-1" style="font-size:var(--step-2)" data-reveal style="--d:80ms">
+              7 images from the project
+            </h2>
+          </div>
+          <p class="faint" style="font-size:var(--step--1)" data-reveal>Click any image to enlarge</p>
+        </div>
+        <div class="gallery gallery--2"><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: SmartWalker — enhancing mobility: problem and solution"><img src="../../assets/img/smartwalker/01.jpg" alt="SmartWalker — enhancing mobility: problem and solution" loading="lazy" decoding="async"></button><figcaption>SmartWalker — enhancing mobility: problem and solution</figcaption></figure><figure data-reveal style="--d:80ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Project title and concept overview"><img src="../../assets/img/smartwalker/00.jpg" alt="Project title and concept overview" loading="lazy" decoding="async"></button><figcaption>Project title and concept overview</figcaption></figure><figure data-reveal style="--d:160ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Future of SmartWalker — healthcare mobility specification"><img src="../../assets/img/smartwalker/03.jpg" alt="Future of SmartWalker — healthcare mobility specification" loading="lazy" decoding="async"></button><figcaption>Future of SmartWalker — healthcare mobility specification</figcaption></figure><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Inspiration and moodboard"><img src="../../assets/img/smartwalker/05.jpg" alt="Inspiration and moodboard" loading="lazy" decoding="async"></button><figcaption>Inspiration and moodboard</figcaption></figure><figure data-reveal style="--d:80ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Company position — about us, clients, mission and vision"><img src="../../assets/img/smartwalker/06.jpg" alt="Company position — about us, clients, mission and vision" loading="lazy" decoding="async"></button><figcaption>Company position — about us, clients, mission and vision</figcaption></figure><figure data-reveal style="--d:160ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Arduino IoT build, emergency button and connection mapping"><img src="../../assets/img/smartwalker/02.jpg" alt="Arduino IoT build, emergency button and connection mapping" loading="lazy" decoding="async"></button><figcaption>Arduino IoT build, emergency button and connection mapping</figcaption></figure><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Smart assist, uphill braking control and contact"><img src="../../assets/img/smartwalker/04.jpg" alt="Smart assist, uphill braking control and contact" loading="lazy" decoding="async"></button><figcaption>Smart assist, uphill braking control and contact</figcaption></figure></div>
+      </div>
+    </section>
+  </article>
+
+  <nav class="case-nav" aria-label="Project navigation">
+    <a href="../med-diag/index.html">
+      <span class="case-nav__l">&larr; Previous</span>
+      <span class="case-nav__t">Med-Diag X1</span>
+    </a>
+    <a href="../loom/index.html">
+      <span class="case-nav__l">Next &rarr;</span>
+      <span class="case-nav__t">LOOM</span>
+    </a>
+  </nav>
+</main>
+
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" data-open="false" aria-hidden="true">
+  <button class="lightbox__close" type="button">Close</button>
+  <img alt="">
+  <div class="lightbox__nav">
+    <button class="lightbox__prev" type="button">&larr; Prev</button>
+    <span class="lightbox__count"></span>
+    <button class="lightbox__next" type="button">Next &rarr;</button>
+  </div>
+</div>
+<footer class="footer">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Let&rsquo;s work together</p>
+    <h2 class="display footer__cta mt-1" data-reveal>
+      Designing things that <em>actually</em> work.<br>
+      <a href="../../contact/index.html" class="serif" style="font-size:0.62em">Start a conversation &rarr;</a>
+    </h2>
+    <div class="footer__cols">
+      <div data-reveal>
+        <p class="footer__h">Contact</p>
+        <a class="footer__li" href="mailto:imaanrafiq234@gmail.com">imaanrafiq234@gmail.com</a>
+        <a class="footer__li" href="tel:07392812939">07392812939</a>
+        <span class="footer__li">United Kingdom</span>
+      </div>
+      <div data-reveal>
+        <p class="footer__h">Elsewhere</p>
+        <a class="footer__li" href="https://uk.linkedin.com/in/imaanrafiq" target="_blank" rel="noopener">LinkedIn &nearr;</a>
+        <a class="footer__li" href="../../work/index.html">Work archive</a>
+        <a class="footer__li" href="../../about/index.html">Studio</a>
+      </div>
+      <div data-reveal>
+        <p class="footer__h">Focus</p>
+        <span class="footer__li">Product &amp; industrial design</span>
+        <span class="footer__li">Design engineering</span>
+        <span class="footer__li">CAD &amp; prototyping</span>
+      </div>
+      <div data-reveal>
+        <p class="footer__h">Availability</p>
+        <span class="footer__li">Open to graduate roles</span>
+        <span class="footer__li">Product design &middot; Medtech &middot; Manufacturing</span>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>&copy; <span data-year>2026</span> Imaan Rafiq. All work shown is the designer&rsquo;s own.</span>
+      <span>BSc Product Design &amp; Technology &middot; Aston University</span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
