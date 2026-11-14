@@ -12,109 +12,140 @@
 <meta property="og:image" content="../../assets/img/smartwalker/00.jpg">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/Inter-normal-300_800-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/InstrumentSerif-normal-400-latin.woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/css/style.css">
 <script>document.documentElement.classList.add('js');</script>
-
 </head>
-<body><div class="progress" aria-hidden="true"></div>
+<body>
+<a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
 <header class="nav">
   <a class="nav__logo" href="../../index.html">Imaan Rafiq<span>&trade;</span></a>
   <nav class="nav__links" id="menu" data-open="false" aria-label="Primary"><a class="nav__link" href="../../index.html">Work</a><a class="nav__link" href="../../work/index.html" aria-current="page">Archive</a><a class="nav__link" href="../../about/index.html">Studio</a><a class="nav__link" href="../../contact/index.html">Contact</a></nav>
-  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button">Menu</button>
-</header>
-<main>
-  <article>
-    <header class="case-hero">
-      <div class="wrap">
-        <a class="eyebrow" href="../index.html" style="display:inline-block">&larr; Work archive</a>
-        <h1 class="display mt-2" data-reveal style="--d:60ms">Pump System</h1>
-        <p class="lede mt-2" data-reveal style="--d:140ms">The paper trail behind the product</p>
-        <dl class="case-hero__meta">
-      <div><dt>Discipline</dt><dd>Hardware engineering</dd></div>
-      <div><dt>Year</dt><dd>2025</dd></div>
-      <div><dt>Role</dt><dd>Systems design · Circuit design · Calculations · CAD</dd></div>
-      <div><dt>Tools</dt><dd>Sketches · Block diagram · Circuit schematic · SOLIDWORKS</dd></div>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button"><i></i>Menu</button>
+</header><main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal><a href="../../work/index.html">Archive</a> &rsaquo; Hardware engineering</p>
+      <h1 class="display mt-1" data-reveal style="--d:80ms">Pump System</h1>
+      <p class="lede mt-2" data-reveal style="--d:140ms">The paper trail behind the product</p>
+      
+    </div>
+  </section>
 
-    </dl>
-        <figure class="case-cover" data-reveal style="--d:220ms">
-          <img src="../../assets/img/pump-system/00.jpg" alt="Pump System — cover" fetchpriority="high" decoding="async">
-        </figure>
-      </div>
-    </header>
+  <section class="section--tight">
+    <div class="wrap">
+      <dl class="meta" data-reveal><div><dt>Year</dt><dd>2025</dd></div><div><dt>Discipline</dt><dd>Hardware engineering</dd></div><div><dt>Role</dt><dd>Systems design · Circuit design · Calculations · CAD</dd></div><div><dt>Tools</dt><dd>Sketches · Block diagram · Circuit schematic · SOLIDWORKS</dd></div></dl>
+      <figure class="case-cover" data-reveal style="--d:160ms">
+        <img src="../../assets/img/pump-system/00.jpg" alt="Pump System &mdash; cover" fetchpriority="high" decoding="async">
+      </figure>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="wrap case-body">
-        <aside class="case-aside">
-          <p class="case-aside__h">At a glance</p>
-          <ul>
-            <li>Hardware engineering</li>
-            <li>2025</li>
-            <li>Systems design · Circuit design · Calculations · CAD</li>
-          </ul>
-          <div class="mt-3">
-            <p class="case-aside__h">Disciplines</p>
-            <div class="tag-row"><li>engineering</li><li>hardware</li><li>sketch</li></div>
-          </div>
-        </aside>
-        <div class="stack" style="--s:clamp(2.5rem,5vw,4.5rem)">
-          <div class="prose stack" style="--s:1.15rem">
-            <p>Every line on paper carries a journey that pristine 3D renders often hide.</p><p>Yes, my lines are not perfectly straight, my handwriting is questionable and the layout is not picture perfect. But this concept is where real engineering happens: tracing the life of an idea from the first spark to a fully realised product.</p>
-          </div>
-          <div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Step 1 — Physical intuition</h2><div class="prose"><p>Getting the raw pump geometry and fluid dynamics on paper: sizing the main cylinder, wrestling with flow resistance — &#x27;flow doesn&#x27;t like corners&#x27; — and defining how pressure transducer membranes turn mechanical movement into electrical signals.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Step 2 — System logic</h2><div class="prose"><p>A block diagram mapping out the pump&#x27;s brain: routing signal pathways from voltage dividers and current sensors into op-amps to drive panel meters and status LEDs.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Step 3 — Circuit design</h2><div class="prose"><p>Turning abstract logic into a working circuit, integrating 7-segment displays, operational amplifiers and resistor networks to read 3-bar pressure inputs.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Step 4 — Calculations and sizing</h2><div class="prose"><p>Validating reality against theory. Given 12 Vdc and a maximum current draw of 10 A, maximum power consumption is 120 W; at a typical 2.5 A draw it is 30 W. Running continuously for one minute at 30 W uses 1800 J of energy.</p><p>This is less than the estimated input requirement calculated earlier, indicating that either the pump must run longer or power input must be higher during operation.</p><p>Component values were then sized: to scale 14 V down to 1.999 V, the voltage divider ratio should be approximately 1:7 — a typical setup uses R1 = 33 kΩ and R2 = 4.7 kΩ. The current-sensor amplifier needs a gain of around 50, and the pressure-sensor amplifier needs a gain of 2.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Step 5 — CAD and production</h2><div class="prose"><p>Bringing all four layers together into a functional 3D CAD model.</p><p>A final product shows what was built, but the paper trail reveals why it works. It captures the trial and error, the excessive problem-solving, and the quiet beauty of bringing an idea into existence. Never hide your rough drafts — they are the heartbeat of innovation.</p></div></div>
-          <div class="stats mt-4"><div class="stat" data-reveal><span class="stat__k">120 W</span><span class="stat__v">Maximum power draw</span></div><div class="stat" data-reveal><span class="stat__k">30 W</span><span class="stat__v">Typical power draw</span></div><div class="stat" data-reveal><span class="stat__k">1800 J/min</span><span class="stat__v">Measured energy consumption</span></div><div class="stat" data-reveal><span class="stat__k">3 bar</span><span class="stat__v">Pressure input range</span></div></div>
+  <section class="section">
+    <div class="wrap">
+      <div class="case-intro">
+        <p class="eyebrow" data-reveal>Overview</p>
+        <div class="case-intro__body" data-reveal style="--d:60ms">
+          <p class="lede">A full engineering paper trail — geometry sketches, system block diagram, circuit schematic, sizing calculations and CAD — for a pressure pump system.</p>
+          <p class="lede">Every line on paper carries a journey that pristine 3D renders often hide.</p><p class="lede">Yes, my lines are not perfectly straight, my handwriting is questionable and the layout is not picture perfect. But this concept is where real engineering happens: tracing the life of an idea from the first spark to a fully realised product.</p>
         </div>
       </div>
-    </section>
+      <div class="stats"><div class="stat" data-reveal><span class="stat__k">120 W</span><span class="stat__v">Maximum power draw</span></div><div class="stat" data-reveal><span class="stat__k">30 W</span><span class="stat__v">Typical power draw</span></div><div class="stat" data-reveal><span class="stat__k">1800 J/min</span><span class="stat__v">Measured energy consumption</span></div><div class="stat" data-reveal><span class="stat__k">3 bar</span><span class="stat__v">Pressure input range</span></div></div>
+    </div>
+  </section>
 
-    <section class="section" style="padding-top:0">
-      <div class="wrap">
-        <div class="sec-head">
-          <div>
-            <p class="eyebrow" data-reveal>Image plate</p>
-            <h2 class="display mt-1" style="font-size:var(--step-2)" data-reveal style="--d:80ms">
-              7 images from the project
-            </h2>
-          </div>
-          <p class="faint" style="font-size:var(--step--1)" data-reveal>Click any image to enlarge</p>
-        </div>
-        <div class="gallery gallery--2"><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Geometry sketches — flow resistance and transducer membranes"><img src="../../assets/img/pump-system/00.jpg" alt="Geometry sketches — flow resistance and transducer membranes" loading="lazy" decoding="async"></button><figcaption>Geometry sketches — flow resistance and transducer membranes</figcaption></figure><figure data-reveal style="--d:80ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Block diagram — sensors, amps, panel meters and LEDs"><img src="../../assets/img/pump-system/01.jpg" alt="Block diagram — sensors, amps, panel meters and LEDs" loading="lazy" decoding="async"></button><figcaption>Block diagram — sensors, amps, panel meters and LEDs</figcaption></figure><figure data-reveal style="--d:160ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Circuit schematic"><img src="../../assets/img/pump-system/02.jpg" alt="Circuit schematic" loading="lazy" decoding="async"></button><figcaption>Circuit schematic</figcaption></figure><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Power and energy calculations"><img src="../../assets/img/pump-system/03.jpg" alt="Power and energy calculations" loading="lazy" decoding="async"></button><figcaption>Power and energy calculations</figcaption></figure><figure data-reveal style="--d:80ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Component values — voltage divider and amplifier gains"><img src="../../assets/img/pump-system/04.jpg" alt="Component values — voltage divider and amplifier gains" loading="lazy" decoding="async"></button><figcaption>Component values — voltage divider and amplifier gains</figcaption></figure><figure data-reveal style="--d:160ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: CAD and production model"><img src="../../assets/img/pump-system/05.jpg" alt="CAD and production model" loading="lazy" decoding="async"></button><figcaption>CAD and production model</figcaption></figure><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Electrical engineering — laminar flow geometry and the pressure transducer signal chain"><img src="../../assets/img/pump-system/c1.jpg" alt="Electrical engineering — laminar flow geometry and the pressure transducer signal chain" loading="lazy" decoding="async"></button><figcaption>Electrical engineering — laminar flow geometry and the pressure transducer signal chain</figcaption></figure></div>
-      </div>
-    </section>
-  </article>
+  <section class="section section--alt">
+    <div class="wrap case-body"><section class="prose-block" data-reveal>
+        <h2>Step 1 — Physical intuition</h2>
+        <div class="prose"><p>Getting the raw pump geometry and fluid dynamics on paper: sizing the main cylinder, wrestling with flow resistance — &#x27;flow doesn&#x27;t like corners&#x27; — and defining how pressure transducer membranes turn mechanical movement into electrical signals.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Step 2 — System logic</h2>
+        <div class="prose"><p>A block diagram mapping out the pump&#x27;s brain: routing signal pathways from voltage dividers and current sensors into op-amps to drive panel meters and status LEDs.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Step 3 — Circuit design</h2>
+        <div class="prose"><p>Turning abstract logic into a working circuit, integrating 7-segment displays, operational amplifiers and resistor networks to read 3-bar pressure inputs.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Step 4 — Calculations and sizing</h2>
+        <div class="prose"><p>Validating reality against theory. Given 12 Vdc and a maximum current draw of 10 A, maximum power consumption is 120 W; at a typical 2.5 A draw it is 30 W. Running continuously for one minute at 30 W uses 1800 J of energy.</p><p>This is less than the estimated input requirement calculated earlier, indicating that either the pump must run longer or power input must be higher during operation.</p><p>Component values were then sized: to scale 14 V down to 1.999 V, the voltage divider ratio should be approximately 1:7 — a typical setup uses R1 = 33 kΩ and R2 = 4.7 kΩ. The current-sensor amplifier needs a gain of around 50, and the pressure-sensor amplifier needs a gain of 2.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Step 5 — CAD and production</h2>
+        <div class="prose"><p>Bringing all four layers together into a functional 3D CAD model.</p><p>A final product shows what was built, but the paper trail reveals why it works. It captures the trial and error, the excessive problem-solving, and the quiet beauty of bringing an idea into existence. Never hide your rough drafts — they are the heartbeat of innovation.</p></div>
+      </section></div>
+  </section>
 
-  <nav class="case-nav" aria-label="Project navigation">
-    <a href="../prosthetic-hand/index.html">
-      <span class="case-nav__l">&larr; Previous</span>
-      <span class="case-nav__t">Prosthetic Hand</span>
-    </a>
-    <a href="../breathalyser/index.html">
-      <span class="case-nav__l">Next &rarr;</span>
-      <span class="case-nav__t">Breathalyser</span>
-    </a>
-  </nav>
-</main>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Gallery</p>
+      <div class="shots"><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/00.jpg" data-cap="Geometry sketches — flow resistance and transducer membranes">
+            <img src="../../assets/img/pump-system/00.jpg" alt="Geometry sketches — flow resistance and transducer membranes" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Geometry sketches — flow resistance and transducer membranes</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/01.jpg" data-cap="Block diagram — sensors, amps, panel meters and LEDs">
+            <img src="../../assets/img/pump-system/01.jpg" alt="Block diagram — sensors, amps, panel meters and LEDs" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Block diagram — sensors, amps, panel meters and LEDs</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/02.jpg" data-cap="Circuit schematic">
+            <img src="../../assets/img/pump-system/02.jpg" alt="Circuit schematic" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Circuit schematic</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/03.jpg" data-cap="Power and energy calculations">
+            <img src="../../assets/img/pump-system/03.jpg" alt="Power and energy calculations" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Power and energy calculations</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/04.jpg" data-cap="Component values — voltage divider and amplifier gains">
+            <img src="../../assets/img/pump-system/04.jpg" alt="Component values — voltage divider and amplifier gains" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Component values — voltage divider and amplifier gains</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/05.jpg" data-cap="CAD and production model">
+            <img src="../../assets/img/pump-system/05.jpg" alt="CAD and production model" loading="lazy" decoding="async">
+          </button>
+          <figcaption>CAD and production model</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/pump-system/c1.jpg" data-cap="Electrical engineering — laminar flow geometry and the pressure transducer signal chain">
+            <img src="../../assets/img/pump-system/c1.jpg" alt="Electrical engineering — laminar flow geometry and the pressure transducer signal chain" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Electrical engineering — laminar flow geometry and the pressure transducer signal chain</figcaption>
+        </figure></div>
+    </div>
+  </section>
 
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" data-open="false" aria-hidden="true">
-  <button class="lightbox__close" type="button">Close</button>
-  <img alt="">
-  <div class="lightbox__nav">
-    <button class="lightbox__prev" type="button">&larr; Prev</button>
-    <span class="lightbox__count"></span>
-    <button class="lightbox__next" type="button">Next &rarr;</button>
-  </div>
-</div>
-<footer class="footer">
+  <section class="section--tight">
+    <div class="wrap pager">
+      <a class="pager__link" href="../../work/prosthetic-hand/index.html">
+        <span class="pager__dir">&larr; Previous</span>
+        <span class="pager__title">Prosthetic Hand</span>
+      </a>
+      <a class="pager__link pager__link--next" href="../../work/breathalyser/index.html">
+        <span class="pager__dir">Next &rarr;</span>
+        <span class="pager__title">Breathalyser</span>
+      </a>
+    </div>
+  </section>
+</main><div class="lightbox" data-lightbox hidden>
+  <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image">&larr;</button>
+  <figure class="lightbox__stage">
+    <img alt="" data-lightbox-img>
+    <figcaption data-lightbox-cap></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">&rarr;</button>
+</div><footer class="footer">
   <div class="wrap">
     <p class="eyebrow" data-reveal>Let&rsquo;s work together</p>
-    <h2 class="display footer__cta mt-1" data-reveal>
+    <h2 class="footer__cta mt-1" data-reveal>
       Designing things that <em>actually</em> work.<br>
-      <a href="../../contact/index.html" class="serif" style="font-size:0.62em">Start a conversation &rarr;</a>
+      <a href="../../contact/index.html" class="serif">Start a conversation &rarr;</a>
     </h2>
     <div class="footer__cols">
       <div data-reveal>
         <p class="footer__h">Contact</p>
         <a class="footer__li" href="mailto:imaanrafiq234@gmail.com">imaanrafiq234@gmail.com</a>
-        <a class="footer__li" href="tel:07392812939">07392812939</a>
         <span class="footer__li">United Kingdom</span>
       </div>
       <div data-reveal>

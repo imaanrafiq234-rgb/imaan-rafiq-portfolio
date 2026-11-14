@@ -11,7 +11,6 @@ SITE = {
     "role": "Product & Industrial Designer",
     "discipline": "Design Engineering · CAD · Prototyping · UX",
     "email": "imaanrafiq234@gmail.com",
-    "phone": "07392812939",
     "linkedin": "https://uk.linkedin.com/in/imaanrafiq",
     "location": "United Kingdom",
     # Set via the SITE_URL env var when building, e.g. SITE_URL=https://example.com

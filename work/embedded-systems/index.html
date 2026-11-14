@@ -12,109 +12,122 @@
 <meta property="og:image" content="../../assets/img/smartwalker/00.jpg">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/Inter-normal-300_800-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/InstrumentSerif-normal-400-latin.woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/css/style.css">
 <script>document.documentElement.classList.add('js');</script>
-
 </head>
-<body><div class="progress" aria-hidden="true"></div>
+<body>
+<a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
 <header class="nav">
   <a class="nav__logo" href="../../index.html">Imaan Rafiq<span>&trade;</span></a>
   <nav class="nav__links" id="menu" data-open="false" aria-label="Primary"><a class="nav__link" href="../../index.html">Work</a><a class="nav__link" href="../../work/index.html" aria-current="page">Archive</a><a class="nav__link" href="../../about/index.html">Studio</a><a class="nav__link" href="../../contact/index.html">Contact</a></nav>
-  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button">Menu</button>
-</header>
-<main>
-  <article>
-    <header class="case-hero">
-      <div class="wrap">
-        <a class="eyebrow" href="../index.html" style="display:inline-block">&larr; Work archive</a>
-        <h1 class="display mt-2" data-reveal style="--d:60ms">Embedded Systems Series</h1>
-        <p class="lede mt-2" data-reveal style="--d:140ms">Understanding the brain behind modern devices</p>
-        <dl class="case-hero__meta">
-      <div><dt>Discipline</dt><dd>Technical communication</dd></div>
-      <div><dt>Year</dt><dd>2024</dd></div>
-      <div><dt>Role</dt><dd>Research · Technical writing · Visual explanation</dd></div>
-      <div><dt>Tools</dt><dd>Adobe Illustrator · Technical diagrams</dd></div>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button"><i></i>Menu</button>
+</header><main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal><a href="../../work/index.html">Archive</a> &rsaquo; Technical communication</p>
+      <h1 class="display mt-1" data-reveal style="--d:80ms">Embedded Systems Series</h1>
+      <p class="lede mt-2" data-reveal style="--d:140ms">Understanding the brain behind modern devices</p>
+      
+    </div>
+  </section>
 
-    </dl>
-        <figure class="case-cover" data-reveal style="--d:220ms">
-          <img src="../../assets/img/embedded-systems/00.jpg" alt="Embedded Systems Series — cover" fetchpriority="high" decoding="async">
-        </figure>
-      </div>
-    </header>
+  <section class="section--tight">
+    <div class="wrap">
+      <dl class="meta" data-reveal><div><dt>Year</dt><dd>2024</dd></div><div><dt>Discipline</dt><dd>Technical communication</dd></div><div><dt>Role</dt><dd>Research · Technical writing · Visual explanation</dd></div><div><dt>Tools</dt><dd>Adobe Illustrator · Technical diagrams</dd></div></dl>
+      <figure class="case-cover" data-reveal style="--d:160ms">
+        <img src="../../assets/img/embedded-systems/00.jpg" alt="Embedded Systems Series &mdash; cover" fetchpriority="high" decoding="async">
+      </figure>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="wrap case-body">
-        <aside class="case-aside">
-          <p class="case-aside__h">At a glance</p>
-          <ul>
-            <li>Technical communication</li>
-            <li>2024</li>
-            <li>Research · Technical writing · Visual explanation</li>
-          </ul>
-          <div class="mt-3">
-            <p class="case-aside__h">Disciplines</p>
-            <div class="tag-row"><li>hardware</li><li>engineering</li></div>
-          </div>
-        </aside>
-        <div class="stack" style="--s:clamp(2.5rem,5vw,4.5rem)">
-          <div class="prose stack" style="--s:1.15rem">
-            <p>A specialised computer system designed to perform a specific task inside a larger device. This series breaks embedded systems down for people meeting them for the first time.</p>
-          </div>
-          <div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Key characteristics</h2><div class="prose"><p>Embedded systems share a set of defining traits: dedicated function, real-time operation, low power consumption, reliable performance and compact size.</p><p>The basic block diagram runs from input devices through a microcontroller with processor and memory, out to output devices — a switch and temperature sensor in, a fan or buzzer out.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Working principle</h2><div class="prose"><p>Sensor, input processing, decision making, output activation. The worked example is a temperature sensor feeding a microcontroller that switches a fan on. The core advantages are fast response, low power consumption, high reliability, compact size and real-time performance.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Platforms compared</h2><div class="prose"><p>Arduino Uno is a basic, easy-to-use microcontroller great for learning electronics. The ESP32 is a powerful, compact microcontroller with wireless communication across home and industrial applications. STM32 offers control-intensive communication components. Raspberry Pi is a single-board computer capable of master-level tasks.</p></div></div><div data-reveal><h2 class="display mb-2" style="font-size:var(--step-2)">Applications and future</h2><div class="prose"><p>Embedded systems sit inside industrial automation, medical devices, washing machines, AC units, robots, smart meters, IoT and smart home products, aerospace navigation systems and drones.</p><p>The future runs through Industry 4.0, industrial robotics, artificial intelligence, the Internet of Things, autonomous vehicles and smart factories — with embedded engineering at the centre of each.</p></div></div>
-          <div class="stats mt-4"><div class="stat" data-reveal><span class="stat__k">4</span><span class="stat__v">Platforms compared</span></div><div class="stat" data-reveal><span class="stat__k">4</span><span class="stat__v">Working stages explained</span></div><div class="stat" data-reveal><span class="stat__k">5</span><span class="stat__v">Key characteristics defined</span></div></div>
+  <section class="section">
+    <div class="wrap">
+      <div class="case-intro">
+        <p class="eyebrow" data-reveal>Overview</p>
+        <div class="case-intro__body" data-reveal style="--d:60ms">
+          <p class="lede">A beginner&#x27;s guide to embedded systems — block diagrams, component comparisons and applications, written and drawn to be genuinely readable.</p>
+          <p class="lede">A specialised computer system designed to perform a specific task inside a larger device. This series breaks embedded systems down for people meeting them for the first time.</p>
         </div>
       </div>
-    </section>
+      <div class="stats"><div class="stat" data-reveal><span class="stat__k">4</span><span class="stat__v">Platforms compared</span></div><div class="stat" data-reveal><span class="stat__k">4</span><span class="stat__v">Working stages explained</span></div><div class="stat" data-reveal><span class="stat__k">5</span><span class="stat__v">Key characteristics defined</span></div></div>
+    </div>
+  </section>
 
-    <section class="section" style="padding-top:0">
-      <div class="wrap">
-        <div class="sec-head">
-          <div>
-            <p class="eyebrow" data-reveal>Image plate</p>
-            <h2 class="display mt-1" style="font-size:var(--step-2)" data-reveal style="--d:80ms">
-              4 images from the project
-            </h2>
-          </div>
-          <p class="faint" style="font-size:var(--step--1)" data-reveal>Click any image to enlarge</p>
-        </div>
-        <div class="gallery gallery--2"><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Complete beginner guide — components, working and future"><img src="../../assets/img/embedded-systems/00.jpg" alt="Complete beginner guide — components, working and future" loading="lazy" decoding="async"></button><figcaption>Complete beginner guide — components, working and future</figcaption></figure><figure data-reveal style="--d:80ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: STM32-powered climate monitoring solution"><img src="../../assets/img/embedded-systems/01.jpg" alt="STM32-powered climate monitoring solution" loading="lazy" decoding="async"></button><figcaption>STM32-powered climate monitoring solution</figcaption></figure><figure data-reveal style="--d:160ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: Arduino Uno pinout reference"><img src="../../assets/img/embedded-systems/02.jpg" alt="Arduino Uno pinout reference" loading="lazy" decoding="async"></button><figcaption>Arduino Uno pinout reference</figcaption></figure><figure data-reveal style="--d:0ms"><button class="shot" data-lightbox type="button" aria-label="Enlarge: MLX90640 32x24 infrared thermal imaging sensor"><img src="../../assets/img/embedded-systems/04.jpg" alt="MLX90640 32x24 infrared thermal imaging sensor" loading="lazy" decoding="async"></button><figcaption>MLX90640 32x24 infrared thermal imaging sensor</figcaption></figure></div>
-      </div>
-    </section>
-  </article>
+  <section class="section section--alt">
+    <div class="wrap case-body"><section class="prose-block" data-reveal>
+        <h2>Key characteristics</h2>
+        <div class="prose"><p>Embedded systems share a set of defining traits: dedicated function, real-time operation, low power consumption, reliable performance and compact size.</p><p>The basic block diagram runs from input devices through a microcontroller with processor and memory, out to output devices — a switch and temperature sensor in, a fan or buzzer out.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Working principle</h2>
+        <div class="prose"><p>Sensor, input processing, decision making, output activation. The worked example is a temperature sensor feeding a microcontroller that switches a fan on. The core advantages are fast response, low power consumption, high reliability, compact size and real-time performance.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Platforms compared</h2>
+        <div class="prose"><p>Arduino Uno is a basic, easy-to-use microcontroller great for learning electronics. The ESP32 is a powerful, compact microcontroller with wireless communication across home and industrial applications. STM32 offers control-intensive communication components. Raspberry Pi is a single-board computer capable of master-level tasks.</p></div>
+      </section><section class="prose-block" data-reveal>
+        <h2>Applications and future</h2>
+        <div class="prose"><p>Embedded systems sit inside industrial automation, medical devices, washing machines, AC units, robots, smart meters, IoT and smart home products, aerospace navigation systems and drones.</p><p>The future runs through Industry 4.0, industrial robotics, artificial intelligence, the Internet of Things, autonomous vehicles and smart factories — with embedded engineering at the centre of each.</p></div>
+      </section></div>
+  </section>
 
-  <nav class="case-nav" aria-label="Project navigation">
-    <a href="../pizza-oven/index.html">
-      <span class="case-nav__l">&larr; Previous</span>
-      <span class="case-nav__t">Pizza Oven</span>
-    </a>
-    <a href="../sketchbook/index.html">
-      <span class="case-nav__l">Next &rarr;</span>
-      <span class="case-nav__t">Sketchbook</span>
-    </a>
-  </nav>
-</main>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal>Gallery</p>
+      <div class="shots"><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/embedded-systems/00.jpg" data-cap="Complete beginner guide — components, working and future">
+            <img src="../../assets/img/embedded-systems/00.jpg" alt="Complete beginner guide — components, working and future" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Complete beginner guide — components, working and future</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/embedded-systems/01.jpg" data-cap="STM32-powered climate monitoring solution">
+            <img src="../../assets/img/embedded-systems/01.jpg" alt="STM32-powered climate monitoring solution" loading="lazy" decoding="async">
+          </button>
+          <figcaption>STM32-powered climate monitoring solution</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/embedded-systems/02.jpg" data-cap="Arduino Uno pinout reference">
+            <img src="../../assets/img/embedded-systems/02.jpg" alt="Arduino Uno pinout reference" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Arduino Uno pinout reference</figcaption>
+        </figure><figure class="shot" data-reveal>
+          <button class="shot__btn" type="button" data-full="../../assets/img/embedded-systems/04.jpg" data-cap="MLX90640 32x24 infrared thermal imaging sensor">
+            <img src="../../assets/img/embedded-systems/04.jpg" alt="MLX90640 32x24 infrared thermal imaging sensor" loading="lazy" decoding="async">
+          </button>
+          <figcaption>MLX90640 32x24 infrared thermal imaging sensor</figcaption>
+        </figure></div>
+    </div>
+  </section>
 
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" data-open="false" aria-hidden="true">
-  <button class="lightbox__close" type="button">Close</button>
-  <img alt="">
-  <div class="lightbox__nav">
-    <button class="lightbox__prev" type="button">&larr; Prev</button>
-    <span class="lightbox__count"></span>
-    <button class="lightbox__next" type="button">Next &rarr;</button>
-  </div>
-</div>
-<footer class="footer">
+  <section class="section--tight">
+    <div class="wrap pager">
+      <a class="pager__link" href="../../work/pizza-oven/index.html">
+        <span class="pager__dir">&larr; Previous</span>
+        <span class="pager__title">Pizza Oven</span>
+      </a>
+      <a class="pager__link pager__link--next" href="../../work/sketchbook/index.html">
+        <span class="pager__dir">Next &rarr;</span>
+        <span class="pager__title">Sketchbook</span>
+      </a>
+    </div>
+  </section>
+</main><div class="lightbox" data-lightbox hidden>
+  <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image">&larr;</button>
+  <figure class="lightbox__stage">
+    <img alt="" data-lightbox-img>
+    <figcaption data-lightbox-cap></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">&rarr;</button>
+</div><footer class="footer">
   <div class="wrap">
     <p class="eyebrow" data-reveal>Let&rsquo;s work together</p>
-    <h2 class="display footer__cta mt-1" data-reveal>
+    <h2 class="footer__cta mt-1" data-reveal>
       Designing things that <em>actually</em> work.<br>
-      <a href="../../contact/index.html" class="serif" style="font-size:0.62em">Start a conversation &rarr;</a>
+      <a href="../../contact/index.html" class="serif">Start a conversation &rarr;</a>
     </h2>
     <div class="footer__cols">
       <div data-reveal>
         <p class="footer__h">Contact</p>
         <a class="footer__li" href="mailto:imaanrafiq234@gmail.com">imaanrafiq234@gmail.com</a>
-        <a class="footer__li" href="tel:07392812939">07392812939</a>
         <span class="footer__li">United Kingdom</span>
       </div>
       <div data-reveal>
