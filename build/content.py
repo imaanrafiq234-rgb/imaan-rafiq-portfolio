@@ -273,6 +273,72 @@ PROJECTS = [
         ],
     },
     {
+        "slug": "caretekk",
+        "title": "Caretekk Health",
+        "subtitle": "Health awareness campaign for a telehealth brand",
+        "category": "Live brand & social design",
+        "year": "2026",
+        "tags": "ux product",
+        "roles": "Content design · Campaign art direction · Health communication",
+        "tools": "Figma · Illustrator · Instagram",
+        "cover": "caretekk/00.jpg",
+        "summary": "An ongoing social campaign for Caretekk, a Nigerian telehealth "
+                   "and home-care platform — turning clinical guidance into clear, "
+                   "shareable posts people actually act on.",
+        "intro": [
+            "Caretekk connects people to doctors and home nurses, but the hardest part "
+            "isn't the booking flow — it's getting people to take a symptom seriously in "
+            "the first place. This campaign exists to close that gap: to make health "
+            "guidance feel approachable, urgent where it needs to be, and impossible to "
+            "scroll past.",
+            "I designed the visual system behind the brand's awareness posts — the "
+            "typography, colour, and layout language that carries everything from World "
+            "Arthritis Day to a simple reminder that you can book a consultation today.",
+        ],
+        "sections": [
+            {
+                "title": "Health communication, not decoration",
+                "body": [
+                    "Health posts fail when they look like adverts. Each piece leads with the "
+                    "symptom the reader recognises — joint pain, hot flashes, a check-up "
+                    "they've put off — and earns attention before it asks for anything.",
+                    "The hierarchy is deliberately plain: a bold claim, the reason to take it "
+                    "seriously, then one clear action. Nothing competes with the message.",
+                ],
+            },
+            {
+                "title": "A system that scales",
+                "body": [
+                    "Because the campaign runs continuously, the layout had to be repeatable "
+                    "without looking repetitive. A consistent grid, a restrained type palette "
+                    "and a single accent colour let new posts slot in quickly while still "
+                    "reading as one brand.",
+                    "That consistency matters more here than anywhere: a health message loses "
+                    "credibility the moment it looks thrown together.",
+                ],
+            },
+            {
+                "title": "Designed to be shared",
+                "body": [
+                    "The most effective posts in the set end with a direct prompt — send this "
+                    "to someone who keeps saying \"it's just age.\" That's the real distribution "
+                    "strategy: design that people forward to the person who needs it.",
+                ],
+            },
+        ],
+        "gallery": [
+            ("caretekk/00.jpg", "Book a consultation — service awareness post"),
+            ("caretekk/01.jpg", "World Arthritis Day — joint pain and what to watch for"),
+            ("caretekk/02.jpg", "World Menopause Day — compassion and support at every stage"),
+            ("caretekk/03.jpg", "New month, new habits — community engagement frame"),
+        ],
+        "stats": [
+            ("4", "Awareness campaigns designed"),
+            ("2", "Global health days covered"),
+            ("1", "Consistent brand system"),
+        ],
+    },
+    {
         "slug": "coffee-machine",
         "title": "Cobra Coffee Machine",
         "subtitle": "Form, flow and internal architecture",
