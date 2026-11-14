@@ -2,5 +2,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .agent_tmp/
-# local deploy artifacts
-*.bundle
+
+# convenience download (not part of the site)
+imaan-portfolio.zip
+imaan-update-only.zip

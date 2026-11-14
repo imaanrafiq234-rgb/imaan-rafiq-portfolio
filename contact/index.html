@@ -12,23 +12,21 @@
 <meta property="og:image" content="../assets/img/smartwalker/00.jpg">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/Inter-normal-300_800-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/InstrumentSerif-normal-400-latin.woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/style.css">
 <script>document.documentElement.classList.add('js');</script>
-
 </head>
-<body><div class="progress" aria-hidden="true"></div>
+<body>
+<a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
 <header class="nav">
   <a class="nav__logo" href="../index.html">Imaan Rafiq<span>&trade;</span></a>
   <nav class="nav__links" id="menu" data-open="false" aria-label="Primary"><a class="nav__link" href="../index.html">Work</a><a class="nav__link" href="../work/index.html">Archive</a><a class="nav__link" href="../about/index.html">Studio</a><a class="nav__link" href="../contact/index.html" aria-current="page">Contact</a></nav>
-  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button">Menu</button>
-</header>
-<main>
-  <section class="case-hero">
+  <button class="nav__toggle" aria-expanded="false" aria-controls="menu" type="button"><i></i>Menu</button>
+</header><main id="main">
+  <section class="page-hero">
     <div class="wrap">
       <p class="eyebrow" data-reveal>Contact</p>
-      <h1 class="display mt-1" data-reveal style="--d:80ms">
-        Let&rsquo;s build<br>something <em>useful</em>.
-      </h1>
+      <h1 class="display mt-1" data-reveal style="--d:80ms">Let&rsquo;s build<br>something <em>useful</em>.</h1>
       <p class="lede mt-2" data-reveal style="--d:160ms">
         I&rsquo;m open to graduate roles in product design, design engineering, embedded
         systems, medtech and manufacturing &mdash; or a conversation about a project.
@@ -38,74 +36,36 @@
 
   <section class="section--tight">
     <div class="wrap">
-      <div class="stats">
-        <div class="stat" data-reveal>
-          <span class="stat__v" style="text-transform:none;letter-spacing:0.02em;text-align:left">Email</span>
-          <a class="stat__k" href="mailto:imaanrafiq234@gmail.com" style="font-size:var(--step-2)">imaanrafiq234@gmail.com</a>
-        </div>
-        <div class="stat" data-reveal>
-          <span class="stat__v" style="text-transform:none;letter-spacing:0.02em;text-align:left">Phone</span>
-          <a class="stat__k" href="tel:07392812939" style="font-size:var(--step-2)">07392812939</a>
-        </div>
-        <div class="stat" data-reveal>
-          <span class="stat__v" style="text-transform:none;letter-spacing:0.02em;text-align:left">LinkedIn</span>
-          <a class="stat__k" href="https://uk.linkedin.com/in/imaanrafiq" target="_blank" rel="noopener" style="font-size:var(--step-2)">/in/imaanrafiq &nearr;</a>
-        </div>
-        <div class="stat" data-reveal>
-          <span class="stat__v" style="text-transform:none;letter-spacing:0.02em;text-align:left">Based in</span>
-          <span class="stat__k" style="font-size:var(--step-2)">United Kingdom</span>
+      <div class="contact">
+        <a class="contact__card" href="mailto:imaanrafiq234@gmail.com" data-reveal>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">imaanrafiq234@gmail.com</span>
+        </a>
+        <a class="contact__card" href="https://uk.linkedin.com/in/imaanrafiq" target="_blank" rel="noopener" data-reveal style="--d:80ms">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">/in/imaanrafiq &nearr;</span>
+        </a>
+        <div class="contact__card contact__card--static" data-reveal style="--d:160ms">
+          <span class="contact__label">Based in</span>
+          <span class="contact__value">United Kingdom</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap split">
-      <div>
-        <p class="eyebrow" data-reveal>What I&rsquo;m looking for</p>
-        <h2 class="display mt-1" style="font-size:var(--step-3)" data-reveal style="--d:80ms">
-          A team where I can keep building things that <em>matter</em>.
-        </h2>
-      </div>
-      <div data-reveal style="--d:160ms">
-        <p class="lede">
-          I graduated with a BSc in Product Design &amp; Technology from Aston University and
-          I&rsquo;m ready for my first full-time engineering role. My final year project brought
-          the whole skill set together: I built a SmartWalker mobility aid from scratch &mdash;
-          user research, CAD, electronics, sensor fusion, FEA, BOM costing and a 12-section
-          technical report.
-        </p>
-        <p class="lede mt-2">
-          If you&rsquo;re hiring graduates in product design, embedded systems, medtech or
-          manufacturing &mdash; or you just want to have a chat &mdash; feel free to connect or
-          drop me a message.
-        </p>
-        <div class="tag-row mt-3">
-          <span class="tag">Product design</span>
-          <span class="tag">Industrial design</span>
-          <span class="tag">Embedded systems</span>
-          <span class="tag">Medtech</span>
-          <span class="tag">Manufacturing</span>
-          <span class="tag">Design engineering</span>
-        </div>
-        <div class="mt-3">
-          <a class="btn btn--solid" href="mailto:imaanrafiq234@gmail.com">Email me directly</a>
-        </div>
-      </div>
+      <p class="contact__note" data-reveal style="--d:220ms">
+        The quickest way to reach me is email. I usually reply within a day or two.
+      </p>
     </div>
   </section>
 </main><footer class="footer">
   <div class="wrap">
     <p class="eyebrow" data-reveal>Let&rsquo;s work together</p>
-    <h2 class="display footer__cta mt-1" data-reveal>
+    <h2 class="footer__cta mt-1" data-reveal>
       Designing things that <em>actually</em> work.<br>
-      <a href="../contact/index.html" class="serif" style="font-size:0.62em">Start a conversation &rarr;</a>
+      <a href="../contact/index.html" class="serif">Start a conversation &rarr;</a>
     </h2>
     <div class="footer__cols">
       <div data-reveal>
         <p class="footer__h">Contact</p>
         <a class="footer__li" href="mailto:imaanrafiq234@gmail.com">imaanrafiq234@gmail.com</a>
-        <a class="footer__li" href="tel:07392812939">07392812939</a>
         <span class="footer__li">United Kingdom</span>
       </div>
       <div data-reveal>
