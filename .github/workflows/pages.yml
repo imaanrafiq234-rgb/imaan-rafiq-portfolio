@@ -25,26 +25,15 @@ jobs:
       - name: Check out site
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
-      - name: Build static site
-        run: python build.py
-        working-directory: build
-        env:
-          SITE_URL: https://imaanrafiq234-rgb.github.io/imaan-rafiq-portfolio
-
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: site
 
       - name: Deploy to GitHub Pages
         id: deployment

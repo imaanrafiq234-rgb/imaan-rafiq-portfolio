@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://imaanrafiq234-rgb.github.io/imaan-rafiq-portfolio/sitemap.xml
