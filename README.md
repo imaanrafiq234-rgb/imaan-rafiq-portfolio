@@ -29,9 +29,16 @@ SITE_URL=https://<user>.github.io/<repo> python3 build.py
 
 ## Deploy (GitHub Pages)
 
-The included workflow (`.github/workflows/pages.yml`) publishes the repository root
-to GitHub Pages on every push to `main`. In the repository settings, set
-**Pages → Build and deployment → Source** to **GitHub Actions**.
+The included workflow (`.github/workflows/pages.yml`) rebuilds the static pages with
+the production site URL and deploys them on every push to `main`. Once a deployment
+succeeds, the site is available at
+[https://imaanrafiq234-rgb.github.io/imaan-rafiq-portfolio/](https://imaanrafiq234-rgb.github.io/imaan-rafiq-portfolio/).
+
+Pages is currently configured to publish from the `main` branch. Before using this
+workflow, open **Settings → Pages → Build and deployment** and change **Source** to
+**GitHub Actions**. The workflow can enable Pages if needed. After pushing or merging
+to `main`, check the **Actions** tab for a successful “Deploy portfolio to GitHub
+Pages” run.
 
 ## Notes
 
